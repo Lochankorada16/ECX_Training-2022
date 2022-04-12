@@ -1,0 +1,11 @@
+Insurance => Abstract Class => Super Class
+premium 
+policyHolder
+policyNumber
+
+=> SubClasses
+
+LifeInsurance      				HealthInsurance     		   VehicleInsurance 
+nominee			   				pre_exixting_disease		   vehicleModel
+				   			 								   yearOfMfg
+overridecalculateprimium   		overridecalculatePremium	   overridecalculatepremium   
