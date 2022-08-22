@@ -27,5 +27,6 @@ public class HealthInsurance extends Insurance {
 		}
 		return premium;
 	}
+f
 
 }

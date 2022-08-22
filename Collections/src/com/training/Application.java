@@ -16,7 +16,7 @@ public class Application {
 	public static void main(String[] args) {
 		
 
-		Book java = new Book(101,"Java","suba", 450);
+		Book java = new Book(101,"Java","suba", 250);
 		Book spring = new Book(102,"Spring","Mad", 650);
 		Book maven = new Book(103,"Maven","Harish", 550);
 		Book html = new Book(104,"Html","Priya", 1450);
@@ -42,8 +42,8 @@ public class Application {
 		System.out.println("\nBook by id");
 		System.out.println("Found Book ="+ foundBook);
 		
-		service.remove(python);
-		service.remove(html);
+//		service.remove(python);
+//		service.remove(html);
 		System.out.println("=================");
 		
 //		List<Book> secondList=service.findAll();
@@ -60,6 +60,12 @@ public class Application {
 		
 		print(service.findAll());
 		
-	}
+		System.out.println();
+		
+		List<Book> bookList = ((BookService)service).getBooksGrtThan(400);
+		
+		bookList.forEach(System.out::println);
+		
+	}		
 
 }
